@@ -1,0 +1,8 @@
+print("Please Guess A Letter Or Try To Guess The Mystery Song")
+print("The Mystery Song contains X letters: *** MAR*H OF *** BLA*K *U**N")
+print("Your Letter Guesses so far have been: A, B, M, F, H, K, L, N, O, R, U")
+print("The Mystery Song Was: 'THE MARCH OF THE BLACK QUEEN'")
+print("You Have Earned: 8 Points")
+print("Your Total Score So Far: 54 Points")
+print("Your Guess 'K' Was Correct!")
+print("Your Guess 'J' Was Incorrect!")
