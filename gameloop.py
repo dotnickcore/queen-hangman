@@ -65,7 +65,6 @@ class GameLoop():
         solved = False
         figure = Figure()
         mystery_song = MysterySong(WORD_LIST[random.randint(0, 199)])
-        print(mystery_song.get_mystery_song())
         
         while running:
             print(f"The Mystery Song contains {len(mystery_song.get_mystery_song().replace(" ", ""))} Letters: {mystery_song.get_masked_mystery_song()}")
