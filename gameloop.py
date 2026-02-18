@@ -2,13 +2,11 @@ from constants import WORD_LIST
 from figure import Figure
 from mysterysong import MysterySong
 import random
-from typing import Self
 
 class GameLoop():
-    def __init__(self) -> Self:
+    def __init__(self) -> None:
         self.__revealed_letters = []
         self.__incorrect_guesses = 0
-        self.run_game_loop()
         
     def is_user_word_guess_correct(self, user_input: str, mystery_song: MysterySong) -> bool:
         if (user_input.lower() == mystery_song.get_mystery_song().lower()):
@@ -34,13 +32,13 @@ class GameLoop():
             return True
         return False
     
-    def set_revealed_letters(self, letter: str) -> Self:
+    def set_revealed_letters(self, letter: str) -> None:
         self.__revealed_letters.append(letter) 
     
     def get_revealed_letters(self) -> list:
         return sorted(self.__revealed_letters)
 
-    def set_incorrect_guesses(self) -> Self:
+    def set_incorrect_guesses(self) -> None:
         self.__incorrect_guesses += 1
         
     def get_incorrect_guesses(self) -> int:
@@ -60,7 +58,7 @@ class GameLoop():
         if (incorrect_guesses == 6):
             figure.add_right_leg()
         
-    def run_game_loop(self) -> Self:
+    def run_game_loop(self) -> None:
         running = True
         solved = False
         figure = Figure()

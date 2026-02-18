@@ -1,15 +1,12 @@
-from typing import Self
-
-
 class MysterySong:
-    def __init__(self, mystery_song: str) -> Self:
+    def __init__(self, mystery_song: str) -> None:
         self.__mystery_song = mystery_song
         self.__masked_mystery_song = self.mask_mystery_song(mystery_song)
         
     def get_mystery_song(self) -> str:
         return self.__mystery_song
     
-    def set_mystery_song(self, mystery_song: str) -> Self:
+    def set_mystery_song(self, mystery_song: str) -> None:
         self.__mystery_song = mystery_song
         self.__masked_mystery_song = self.mask_mystery_song(mystery_song)
     
@@ -25,7 +22,7 @@ class MysterySong:
                 result_list.append(char)
         return "".join(result_list)
     
-    def unmask_letter(self, mystery_letter: str, position: int, masked_song: str) -> Self:
+    def unmask_letter(self, mystery_letter: str, position: int, masked_song: str) -> None:
         letter_list = list(masked_song)
         letter_list[position] = mystery_letter
         
