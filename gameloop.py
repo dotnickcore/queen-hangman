@@ -111,5 +111,6 @@ class GameLoop():
                 print("GAME OVER - The Hangman Got You!")
                 print(f"The Mystery Word was: {mystery_song.get_mystery_song()}")
                 running = False
+            print()
                 
             
